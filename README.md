@@ -1,6 +1,6 @@
 # Description
 
 # Contributers
-Gabriel Warner
-Nick ...
-.....
+Gabriel Warner \
+Nick ... \
+..... \
