@@ -9,13 +9,15 @@
   height: 100vh;
   display: grid;
   grid-template-rows: 2fr 7fr 1fr;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
 }
 
 nav{
   display: flex;
   grid-row: 2 / span 1;
   grid-column: 1 / span 1;
+  justify-content: center;
+  padding: 20px;
 }
 
 header{
@@ -23,7 +25,21 @@ header{
   grid-column: 1 / span 2;
 }
 
-.Scheduler{
+.time-select{
   grid-row: 2 / span 1;
   grid-column: 2 / span 1;
+}
+
+#mass-date{
+  height: 50px;
+  border-radius: 5px;
+}
+
+#mass-times{
+  width: 250px;
+  height: 300px;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
