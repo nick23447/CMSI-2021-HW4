@@ -4,10 +4,13 @@ import Header from "./Header"
 import TimeSelect from "./TimeSelect"
 import Schedule from "./Schedule"
 import './App.css'
+import { useAuthentication } from "../services/authService"
 
 function App() {
 const [selectTime, setSelectTime] = useState(false)
 const [massInfo, setMassInfo] = useState({Week: null, Time: null})
+const user = useAuthentication()
+
 console.log(massInfo)
   return (
     <>

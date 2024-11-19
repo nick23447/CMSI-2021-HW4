@@ -7,7 +7,7 @@ export default function WeekSelect({ setSelectTime, selectTime, setMassInfo}){
     return (
         <>
         <nav>
-            <button id="mass-date" onClick={(e) => handleClick(e)} > 4th Week of Novemeber</button>
+            <button id="mass-date" onClick={(e) => handleClick(e)} > 31st Sunday in Ordinary Time</button>
         </nav>
         </>
     )
