@@ -18,7 +18,7 @@ console.log(massInfo)
     <Header />
     <WeekSelect setSelectTime={setSelectTime} selectTime={selectTime} setMassInfo={setMassInfo} />
     {selectTime && <TimeSelect setSelectTime={setSelectTime} selectTime={selectTime} massInfo={massInfo} setMassInfo={setMassInfo} />}
-    {massInfo.Time && massInfo.Week && <Schedule massInfo={massInfo} /> }
+    {massInfo.Time && massInfo.Week && <Schedule massInfo={massInfo} user={user}/> }
     </div>
     </>
   )
