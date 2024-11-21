@@ -1,6 +1,7 @@
-# Description
+# Scheduler
 
 # Contributers
-Gabriel Warner \
-Nick ... \
-..... \
+Christian Ruiz Mendez
+Nicholas Laus
+Gabriel Warner 
+
