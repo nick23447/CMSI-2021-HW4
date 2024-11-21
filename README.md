@@ -1,7 +1,5 @@
 # Scheduler
 
 # Contributers
-Christian Ruiz Mendez
-Nicholas Laus
-Gabriel Warner 
+Christian Ruiz Mendez, Nicholas Laus, Gabriel Warner 
 
