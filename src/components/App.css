@@ -60,3 +60,19 @@ nav{
   justify-content: space-around;
   
 }
+
+.liturgy-positions{
+  height: 525px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.position{
+  display: flex;
+  flex-direction: column;
+  width: 1139px;
+  height:150px;
+
+}
