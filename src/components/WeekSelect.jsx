@@ -1,5 +1,6 @@
 export default function WeekSelect({ setSelectTime, selectTime, setMassInfo}){
     function handleClick(e){
+        e.preventDefault()
         setMassInfo({"Week": `${e.target.textContent}`, "Time": null })
         setSelectTime(!selectTime)
 
@@ -7,7 +8,7 @@ export default function WeekSelect({ setSelectTime, selectTime, setMassInfo}){
     return (
         <>
         <nav>
-            <button id="mass-date" onClick={(e) => handleClick(e)} > 31st Sunday in Ordinary Time</button>
+            <button id="mass-date" onClick={(e) => handleClick(e)} >31 Sunday in Ordinary Time</button>
         </nav>
         </>
     )

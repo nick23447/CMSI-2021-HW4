@@ -32,9 +32,12 @@ nav{
   grid-column: 1 / span 1;
   justify-content: center;
   padding: 20px;
+<<<<<<< Updated upstream
   background-color: rgba(49, 1, 19, 0.995);
   border-radius: 1ch;
   height: 100%; 
+=======
+>>>>>>> Stashed changes
 }
 
 .time-select{
