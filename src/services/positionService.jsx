@@ -5,6 +5,7 @@ import {
   query,
   getDocs,
   setDoc,
+  where,
   addDoc,
   orderBy,
   limit,
@@ -32,4 +33,18 @@ export async function signUpPosition( name, user, massInfo, title, slots ){
     const newSignUp = doc(currentCol, title)
     await setDoc(newSignUp, data)
     return name;
+}
+
+export async function fetchSignups( massInfo ){
+    const path = `/Masses/${massInfo.Week}/${massInfo.Time}`
+    console.log(path)
+    const snapshot = await getDocs(
+        query(collection(db, path), where(path, "==", user))
+      )
+    console.log
+    return snapshot.docs.map((doc) => (
+        {
+        id: doc.id,
+        ...doc.data(),
+      }))
 }
