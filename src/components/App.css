@@ -25,16 +25,6 @@ header{
   border-radius: 1ch;
 }
 
-/*h1 {
-  color: black;
-  background-color: rgb(168, 179, 181);
-  border-radius: 1ch;
-  padding:30px;
-  width: auto;
-  height: auto;
-}
-*/
-
 nav{
   display: flex;
   grid-row: 2 / span 1;
