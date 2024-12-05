@@ -3,7 +3,6 @@ body {
   background-color: rgba(168, 174, 175, 0.518);
 }
 
-
 #root {
   margin: 0;
   padding: 0;
@@ -32,12 +31,9 @@ nav{
   grid-column: 1 / span 1;
   justify-content: center;
   padding: 20px;
-<<<<<<< Updated upstream
   background-color: rgba(49, 1, 19, 0.995);
   border-radius: 1ch;
   height: 100%; 
-=======
->>>>>>> Stashed changes
 }
 
 .time-select{
@@ -61,9 +57,15 @@ nav{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  
 }
 
+.schedule h3{
+  display: flex;
+  place-content: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  /* add font*/
+}
 .liturgy-positions{
   height: 525px;
   display: flex;
@@ -73,9 +75,28 @@ nav{
 }
 
 .position{
+  background-color: rgba(141, 158, 169, 0.466);
   display: flex;
   flex-direction: column;
+  place-content: center;
+  place-items: center;
   width: 1139px;
-  height:150px;
+  height:175px;
+  border-radius: 1ch;
+  border: 8px solid rgba(8, 77, 93, 0.995);
+  margin: 5px;
+}
 
+.position h3{
+  background-color: rgb(7, 66, 42);
+  color: rgb(223, 227, 237);
+  border-radius: 1ch;
+  padding: 5px;
+}
+
+.position button{
+  background-color: rgb(7, 66, 42);
+  color: rgb(223, 227, 237);
+  border-radius: 1ch;
+  padding: 5px;
 }
