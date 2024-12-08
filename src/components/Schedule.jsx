@@ -6,12 +6,10 @@ import { loggedInUserId } from "../services/authService"
 export default function Schedule({ massInfo, user, managers}){
     const [positions, setPositions] = useState(null)
     const isManager = (managers.has(loggedInUserId().toString()) )
-    console.log(isManager, `${loggedInUserId()}` )
 
     useEffect(() => {
         fetchPositions(massInfo).then(setPositions)
     },[massInfo])
-    console.log(positions)
     return(
         <>
         <div className="schedule">
@@ -20,7 +18,7 @@ export default function Schedule({ massInfo, user, managers}){
                 <ul>
                 {!isManager && positions && positions.map((position, index) =>(
                     <li key={index}>
-                        <SignUpPosition title={position.id} slots={position.slots} user={user} massInfo={massInfo}/>
+                        <SignUpPosition title={position.id} slots={position.slots} massInfo={massInfo}/>
                     </li>
                 ))}
 
