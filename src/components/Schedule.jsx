@@ -12,7 +12,7 @@ export default function Schedule({ massInfo, user, managers}){
     },[massInfo])
     return(
         <>
-        <div className="schedule">
+        <div className={`schedule ${isManager ? "manager-view" : "user-view"}`}>
             <h3> Sunday Mass for the {massInfo.Week} at {massInfo.Time}</h3>
             <section className="liturgy-positions">
                 <ul>
