@@ -45,6 +45,15 @@ export async function fetchSignUps() {
     });
 
     await Promise.all(massPromises);
+    return positions;
+}
+// ######### WRITE TO FIREBASE #############
+
+export async function signUpPosition( name, id, massInfo, title, slots ){
+    const input = `${name} ${id} False`
+    const data = {slots:[...slots, input]}
+    const massPath = `/Masses/${massInfo.Week}/${massInfo.Time}`
+    const currentCol = collection(db, massPath)
     const newSignUp = doc(currentCol, title)
     await setDoc(newSignUp, data)
     return name;
