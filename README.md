@@ -1,4 +1,3 @@
-# Scheduler
 Welcome to Sacred Heart Liturgy Scheduler
 =========================================
 This is an app that helps coordinate for positions to be filled
