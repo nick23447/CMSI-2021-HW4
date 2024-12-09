@@ -26,10 +26,6 @@ useEffect(() => {
       return response.json();
     })
     .then((data) => {
-      console.log("API Response:", data[0]);
-      console.log("API ID:", data[0].id);
-      console.log("API MP3 link:", data[0].mp3Link);
-
       if (data.length > 0 && data[0].mp3Link) {
         setDailyMystery(data[0].mystery);
       } else {
@@ -40,11 +36,6 @@ useEffect(() => {
       console.error("Error fetching rosary data:", err);
     });
 }, []);
-
-useEffect(() => {
-  console.log("audioLink state updated:", mysteryType);
-}, [mysteryType]);
-
 
 console.log(massInfo)
   return (
