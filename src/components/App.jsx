@@ -15,7 +15,7 @@ const [isAudioVisible, setIsAudioVisible] = useState(true);
 const user = useAuthentication()
 // Christian Ruiz: Lgrf94F3rLcogvxEMVhpw5mIMc83
 // Nicholas Laus: iR5FQo91FWZFpx6fR4s6pQhmwYF3
-const userManagers = new Set(["Lgrf94F3rLcogvxEMVhpw5mIMc83", "0"])
+const userManagers = new Set(["Lgrf94F3rLcogvxEMVhpw5mIMc83", "0",])
 const API_URL = "https://the-rosary-api.vercel.app/v1/today";
 
 useEffect(() => {
@@ -48,7 +48,7 @@ console.log(massInfo)
     {selectTime && <TimeSelect setSelectTime={setSelectTime} selectTime={selectTime} massInfo={massInfo} setMassInfo={setMassInfo} />}
     {massInfo.Time && massInfo.Week && <Schedule massInfo={massInfo} user={user} managers={userManagers}/> }
     {mysteryType && isAudioVisible && (
-      <div>
+      <div className = "rosary">
         <h2>Daily Rosary Prayer</h2>
         <audio controls>
           <source src={`/rosary_audio/audio-rosary-${mysteryType?.toLowerCase()}-mysteries.mp3`} type="audio/mpeg" />
