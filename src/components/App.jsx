@@ -11,6 +11,7 @@ const [selectTime, setSelectTime] = useState(false)
 const [displaySignUps, setDisplaySignUps] = useState(false)
 const [massInfo, setMassInfo] = useState({Week: null, Time: null})
 const [mysteryType, setDailyMystery] = useState(null);
+const [isAudioVisible, setIsAudioVisible] = useState(true);
 const user = useAuthentication()
 // Christian Ruiz: Lgrf94F3rLcogvxEMVhpw5mIMc83
 // Nicholas Laus: iR5FQo91FWZFpx6fR4s6pQhmwYF3
@@ -42,18 +43,18 @@ console.log(massInfo)
     <>
     <div className="App">
     <Header  user={user}/>
-    <WeekSelect setSelectTime={setSelectTime} selectTime={selectTime} setMassInfo={setMassInfo} setDisplaySignUps={setDisplaySignUps} />
+    <WeekSelect setSelectTime={setSelectTime} selectTime={selectTime} setMassInfo={setMassInfo} setDisplaySignUps={setDisplaySignUps} setIsAudioVisible={setIsAudioVisible} />
     {displaySignUps && <SignUps />}
     {selectTime && <TimeSelect setSelectTime={setSelectTime} selectTime={selectTime} massInfo={massInfo} setMassInfo={setMassInfo} />}
     {massInfo.Time && massInfo.Week && <Schedule massInfo={massInfo} user={user} managers={userManagers}/> }
-    {mysteryType && (
+    {mysteryType && isAudioVisible && (
       <div>
-      <h2>Daily Rosary Prayer</h2>
-      <audio controls>
-        <source src={`/rosary_audio/audio-rosary-${mysteryType?.toLowerCase()}-mysteries.mp3`} type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-    </div>
+        <h2>Daily Rosary Prayer</h2>
+        <audio controls>
+          <source src={`/rosary_audio/audio-rosary-${mysteryType?.toLowerCase()}-mysteries.mp3`} type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
     )}
     </div>
     </>
