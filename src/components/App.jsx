@@ -15,7 +15,7 @@ const [isAudioVisible, setIsAudioVisible] = useState(true);
 const user = useAuthentication()
 // Christian Ruiz: Lgrf94F3rLcogvxEMVhpw5mIMc83
 // Nicholas Laus: iR5FQo91FWZFpx6fR4s6pQhmwYF3
-const userManagers = new Set(["Lgrf94F3rLcogvxEMVhpw5mIMc83", "0",])
+const userManagers = new Set(["Lgrf94F3rLcogvxEMVhpw5mIMc83", "0"])
 const API_URL = "https://the-rosary-api.vercel.app/v1/today";
 
 useEffect(() => {
