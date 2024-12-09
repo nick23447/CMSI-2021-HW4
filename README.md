@@ -13,6 +13,7 @@ and at each mass the positions options are:
 - Eucharistic Ministers
 - Lectors
 ==========================================
+
 As a User:
 - A User may navigate to the Mass Week they wish to sign up for 
 and select the position that they have been trained/assined 
@@ -32,6 +33,7 @@ As a Manger:
 - A Manager should select the 'Approve this Person' button to approve the User for the given position
 - When a Manager approves the User's position this will be indicated to the User on their display when they go to view thier Sign Ups
 ==========================================
+
 Additional Feature:
 - When nothing is selected there is an Daily Rosary Prayer that the user may listen to !
 
