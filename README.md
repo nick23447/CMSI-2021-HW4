@@ -35,6 +35,9 @@ As a Manger:
 Additional Feature:
 - When nothing is selected there is an Daily Rosary Prayer that the user may listen to !
 
+Vist Sacred Heart Liturgy Scheduler!: https://sacred-heart-liturgy.web.app
+:) :D <3
+
 ## Contributers
 Christian Ruiz Mendez, Nicholas Laus, Gabriel Warner 
 
