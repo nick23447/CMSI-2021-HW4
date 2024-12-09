@@ -11,8 +11,9 @@ const [selectTime, setSelectTime] = useState(false)
 const [displaySignUps, setDisplaySignUps] = useState(false)
 const [massInfo, setMassInfo] = useState({Week: null, Time: null})
 const user = useAuthentication()
-const userManagers = new Set(["Lgrf94F3rLcogvxEMVhpw5mIMc83", "0", "iR5FQo91FWZFpx6fR4s6pQhmwYF3"])
+const userManagers = new Set(["Lgrf94F3rLcogvxEMVhpw5mIMc83", "0", ])
 // Christian Ruiz: Lgrf94F3rLcogvxEMVhpw5mIMc83
+// Nicholas Laus: iR5FQo91FWZFpx6fR4s6pQhmwYF3
 console.log(massInfo)
   return (
     <>

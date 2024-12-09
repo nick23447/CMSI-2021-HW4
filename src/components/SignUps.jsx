@@ -37,9 +37,11 @@ export default function SignUps(){
         <ul>
         {userSignUps.map((item, index) => (
             <li key={index}>
-                <div className="sign-up">
+                <div className={`sign-up ${item.isApproved === true ? "approved" : "not-approved"}`}>
                     <h2> You have signed up {item.position}</h2>
-                    <h3> You have been Approved {item.isApproved}</h3>
+                    <h3> 
+                        You {" "}
+                        {item.isApproved === true ? "have been Approved" : "have not been Approved"} </h3>
                 </div>
             </li>
         ))}
